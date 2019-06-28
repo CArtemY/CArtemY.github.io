@@ -6,7 +6,7 @@ html, body{
 }
 
 #main {
-    max-width: 500px;
+    max-width: 360px;
     width: 100%;
     margin: 0 auto;
     height: 100vh;
@@ -22,7 +22,7 @@ html, body{
 
 .header{
     width: 100%;
-    max-width: 500px;
+    max-width: 360px;
     background: #f1c40f;
     height: 80px;
     text-align: center;
@@ -67,7 +67,7 @@ html, body{
 
 .footer{
     width: 100%;
-    max-width: 500px;
+    max-width: 360px;
     background: #f1c40f;
     height: 80px;
     text-align: center;
