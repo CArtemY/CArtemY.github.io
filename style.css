@@ -2,6 +2,7 @@ html, body{
     padding: 0 ;
     margin: 0 ;
     color: white;
+    min-width: 285px;
 }
 
 #main {
@@ -72,7 +73,7 @@ html, body{
 .footer{
     width: 100%;
     background: #f1c40f;
-    height: 65px;
+    height: 40px;
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -81,7 +82,7 @@ html, body{
 
 .line_1{
     border: 0px solid #2c3e50;
-    height:55px;
+    height:30px;
     width: 2px;
     top: 7px;
     padding: 0;
@@ -93,7 +94,7 @@ html, body{
 }
 .line_2{
     border: 0px solid #2c3e50;
-    height:55px;
+    height:30px;
     width: 2px;
     top: 7px;
     padding: 0;
@@ -105,7 +106,7 @@ html, body{
 }
 .line_3{
     border: 0px solid #2c3e50;
-    height:55px;
+    height:30px;
     width: 2px;
     top: 7px;
     padding: 0;
@@ -123,7 +124,7 @@ html, body{
     left: 0%;
     transform: translate(0%, -45%);
     background: url('img/Menu/house-black-silhouette-without-door%20(1).png') center center no-repeat;
-    background-size: 40px 40px;
+    background-size: 25px 25px;
 }
 .footer_ico_2{
     position: absolute;
@@ -133,7 +134,7 @@ html, body{
     left: 25%;
     transform: translate(0%, -45%);
     background: url('img/Menu/favorite-heart-button.png') center center no-repeat;
-    background-size: 40px 40px;
+    background-size: 25px 25px;
 }
 .footer_ico_3{
     position: absolute;
@@ -143,7 +144,7 @@ html, body{
     left: 50%;
     transform: translate(0%, -45%);
     background: url('img/Menu/musica-searcher.png') center center no-repeat;
-    background-size: 40px 40px;
+    background-size: 25px 25px;
 }
 .footer_ico_4{
     position: absolute;
@@ -153,7 +154,7 @@ html, body{
     left: 75%;
     transform: translate(0%, -45%);
     background: url('img/Menu/round-account-button-with-user-inside.png') center center no-repeat;
-    background-size: 40px 40px;
+    background-size: 25px 25px;
 }
 
 /*Top*/
@@ -171,9 +172,16 @@ html, body{
     width: 94%;
     min-height: 100px;
     height: auto;
-    background: -webkit-linear-gradient(53deg, rgba(233,255,64,1) 0%, rgba(0,128,128,1) 100%);
-    opacity: .5;
 }
+/*Box include*/
+.top_box_container{
+    height: auto;
+    width: 100%;
+    min-height: 100px;
+    background: -webkit-linear-gradient(53deg, rgba(233,255,64,1) 0%, rgba(0,128,128,1) 100%);
+    opacity: .8;
+}
+
 
 /*Play_bar*/
 .hr_play_bar{

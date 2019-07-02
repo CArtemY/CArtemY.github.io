@@ -1,0 +1,6 @@
+play-button 		- https://www.flaticon.com/free-icon/play-button_149657#term=play&page=1&position=2
+play-button round 	- https://www.flaticon.com/free-icon/play-button_26025
+pause round		- https://www.flaticon.com/free-icon/rounded-pause-button_61039#term=pause&page=1&position=10
+next 			- https://www.flaticon.com/free-icon/fast-forward_149660
+nota 			- https://www.flaticon.com/free-icon/music-player_149646
+next			- https://www.flaticon.com/free-icon/play-symbol_26061
