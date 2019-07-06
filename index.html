@@ -15,7 +15,9 @@
 <body>
     
 <div class="main" id="main">
-        
+    
+    
+    
     <div class="header" id="header">
         <div class="header_1">
             <div class="header_ico" id="header_ico"></div>
@@ -24,8 +26,7 @@
         <hr class="hr_header">
     </div>
         
-    <div class="content">
-        
+    <div class="home_page" id="home_page">
         <div class="top_main">
             <div class="top_logo">Top</div>
             <div class="top_box">
@@ -33,19 +34,138 @@
                 <div class="top_img_container"></div>
                 <div class="top_list_container"></div>
             </div>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
         </div>
-        Hello
     </div>
-    
+    <div class="like_page">
+        <div class="content_like_page">LIKE_PAGE
+        Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr></div>
+    </div>
+    <div class="find_page" id="find_page">
+        <div class="content_find_page">FIND_PAGE
+        Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr></div>
+    </div>
+    <div class="account_page" id="account_page">
+        <div class="content_account_page">ACCOUNT_PAGE
+        Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr>
+            Hello<hr></div>
+    </div>
     <div class="footer" id="footer">
         <hr class="hr_header">
         <hr class="line_1">
         <hr class="line_2">
         <hr class="line_3">
-        <div class="footer_ico_1"></div>
-        <div class="footer_ico_2"></div>
-        <div class="footer_ico_3"></div>
-        <div class="footer_ico_4"></div>
+        <div class="footer_ico_1" id="footer_ico_1"></div>
+        <div class="footer_ico_2" id="footer_ico_2"></div>
+        <div class="footer_ico_3" id="footer_ico_3"></div>
+        <div class="footer_ico_4" id="footer_ico_4"></div>
         
         <!--<hr class="hr_play_bar">>-->
         <div class="progress_box">
@@ -76,7 +196,7 @@
 
 </div>
 <script>
-  $('.button_like').on('click',function(e){
+$('.button_like').on('click',function(e){
       e.preventDefault;
       if (document.getElementById('button_like_on').style.display=="flex"){
           document.getElementById('button_like_on').style.display="none";
@@ -84,8 +204,252 @@
           document.getElementById('button_like_on').style.display="flex";
       }
 });
+var home_page_count = 0; 
+var like_page_count = 0;    
+var find_page_count = 0; 
+var account_page_count = 0; 
     
-alert("Hello");
+if (home_page_count == 1){
+    home_page_count=1;
+}else{
+    $('.home_page').toggleClass('home_page_active');
+    home_page_count = 1;
+}
+    
+$('.footer_ico_1').on('click', function(e){
+    e.preventDefault;
+    if (like_page_count == 0){
+        like_page_count = 0;
+    }else{
+        $('.like_page').toggleClass('like_page_active');
+        like_page_count = 0;
+    }
+    
+    if (find_page_count == 0){
+        find_page_count = 0;
+    }else{
+        $('.find_page').toggleClass('find_page_active');
+        find_page_count = 0;
+    }
+    
+    if (account_page_count == 0){
+        account_page_count = 0;
+    }else{
+        $('.account_page').toggleClass('account_page_active');
+        account_page_count = 0;
+    }
+    
+    $('.home_page').toggleClass('home_page_active');
+    home_page_count = 1;
+});
+    
+$('.footer_ico_2').on('click', function(e){
+    e.preventDefault;
+    if (like_page_count == 0){
+        if (find_page_count == 0){
+            find_page_count = 0;
+        } else {
+            $('.find_page').toggleClass('find_page_active');
+            find_page_count = 0;
+        }    
+
+        if (account_page_count == 0){
+            account_page_count = 0;
+        } else {
+             $('.account_page').toggleClass('account_page_active');
+        account_page_count = 0;
+        }
+        
+        $('.like_page').toggleClass('like_page_active');
+        like_page_count = 1;
+        
+        if (home_page_count == 0){
+            home_page_count=0;
+        }else{
+            $('.home_page').toggleClass('home_page_active');
+        home_page_count = 0;
+        }
+        
+    } else{
+        if (find_page_count == 0){
+            find_page_count = 0;
+        } else {
+             $('.find_page').toggleClass('find_page_active');
+        find_page_count = 0;
+        }    
+
+        if (account_page_count == 0){
+            account_page_count = 0;
+        } else {
+             $('.account_page').toggleClass('account_page_active');
+        account_page_count = 0;
+        }
+        
+        if (home_page_count == 0){
+            home_page_count=0;
+        }else{
+            $('.home_page').toggleClass('home_page_active');
+        home_page_count = 0;
+        }
+    }
+    
+});
+    
+$('.footer_ico_3').on('click', function(e){
+    e.preventDefault;
+    if (find_page_count == 0){
+        if (account_page_count == 0){
+            account_page_count = 0;
+        } else {
+             $('.account_page').toggleClass('account_page_active');
+        account_page_count = 0;
+        }
+        
+        if (like_page_count == 1){
+            like_page_count = 1;
+        }else {
+            $('.like_page').toggleClass('like_page_active');
+        like_page_count = 1;
+        }
+        
+        if (home_page_count == 0){
+            home_page_count=0;
+        }else{
+            $('.home_page').toggleClass('home_page_active');
+        home_page_count = 0;
+        }
+        
+         $('.find_page').toggleClass('find_page_active');
+        find_page_count = 1;
+        
+        if (home_page_count == 0){
+            home_page_count=0;
+        }else{
+            $('.home_page').toggleClass('home_page_active');
+        home_page_count = 0;
+        }
+        
+        if (like_page_count == 0){
+            like_page_count = 0;
+        }else {
+            $('.like_page').toggleClass('like_page_active');
+        like_page_count = 0;
+        }
+        
+    }else{
+         if (account_page_count == 0){
+            account_page_count = 0;
+        } else {
+             $('.account_page').toggleClass('account_page_active');
+        account_page_count = 0;
+        }
+        
+        if (like_page_count == 1){
+            like_page_count = 1;
+        }else {
+            $('.like_page').toggleClass('like_page_active');
+        like_page_count = 1;
+        }
+        
+        if (home_page_count == 0){
+            home_page_count=0;
+        }else{
+            $('.home_page').toggleClass('home_page_active');
+        home_page_count = 0;
+        }
+        
+        if (like_page_count == 0){
+            like_page_count = 0;
+        }else {
+            $('.like_page').toggleClass('like_page_active');
+        like_page_count = 0;
+        }
+        
+    } 
+
+});
+    
+$('.footer_ico_4').on('click', function(e){
+    e.preventDefault;
+    if (account_page_count == 0){
+        if (like_page_count == 1){
+            like_page_count = 1;
+        }else{
+            $('.like_page').toggleClass('like_page_active');
+            like_page_count = 1;
+        }
+        
+        if (find_page_count == 1){
+            find_page_count = 1;
+        }else{
+            $('.find_page').toggleClass('find_page_active');
+            find_page_count = 1;
+        }
+        
+        $('.account_page').toggleClass('account_page_active');
+            account_page_count = 1;
+        
+        if (home_page_count == 0){
+            home_page_count=0;
+        }else{
+            $('.home_page').toggleClass('home_page_active');
+        home_page_count = 0;
+        }
+        
+        if (like_page_count == 0){
+            like_page_count = 0;
+        }else {
+            $('.like_page').toggleClass('like_page_active');
+        like_page_count = 0;
+        }
+        
+        if (find_page_count == 0){
+            find_page_count = 0;
+        }else{
+            $('.find_page').toggleClass('find_page_active');
+            find_page_count = 0;
+        }
+        
+    }else{
+        if (like_page_count == 1){
+            like_page_count = 1;
+        }else{
+            $('.like_page').toggleClass('like_page_active');
+            like_page_count = 1;
+        }
+        
+        if (find_page_count == 1){
+            find_page_count = 1;
+        }else{
+            $('.find_page').toggleClass('find_page_active');
+            find_page_count = 1;
+        }
+        
+        if (home_page_count == 0){
+            home_page_count=0;
+        }else{
+            $('.home_page').toggleClass('home_page_active');
+        home_page_count = 0;
+        }
+        
+        if (like_page_count == 0){
+            like_page_count = 0;
+        }else {
+            $('.like_page').toggleClass('like_page_active');
+        like_page_count = 0;
+        }
+        
+        if (find_page_count == 0){
+            find_page_count = 0;
+        }else{
+            $('.find_page').toggleClass('find_page_active');
+            find_page_count = 0;
+        }
+        
+    }
+});
+    
+//alert("Hello");
 </script>
 </body>
 </html>
