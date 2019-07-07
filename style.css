@@ -5,7 +5,7 @@ html, body{
 }
 
 .home_page{
-    position: fixed;
+    position: absolute;
     display: flex;
     left: 0;
     top: 60px;
@@ -297,7 +297,7 @@ html, body{
 }
 
 .like_page{
-    position: fixed;
+    position: absolute;
     display: flex;
     left: 0;
     top: 60px;
@@ -315,7 +315,7 @@ html, body{
 }
 
 .find_page{
-    position: fixed;
+    position: absolute;
     display: flex;
     left: 0;
     top: 60px;
@@ -333,7 +333,7 @@ html, body{
 }
 
 .account_page{
-    position: fixed;
+    position: absolute;
     display: flex;
     left: 0;
     top: 60px;
