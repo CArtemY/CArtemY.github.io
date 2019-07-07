@@ -1,33 +1,28 @@
 html, body{
     padding: 0;
     margin: 0;
-}
-
-#main {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: #fafafafa;
-    width: 100%;
-    height: auto;
+    overflow-x: hidden;
 }
 
 .home_page{
     position: absolute;
-    left: 100%;
-    top: 60px;
     display: flex;
+    left: 0;
+    top: 60px;
     width: 100%;
     height: auto;
     justify-content: center;
     background-color: #fafafafa;
     transition: 0.5s;
     z-index: 1;
+    transform: translateX(100%);
 }
 .home_page_active{
     transition: 0.5s;
-    left: 0%;
+    transform: translateX(0%);
 }
+
+
 
 .header{
     width: 100%;
@@ -166,32 +161,6 @@ html, body{
     background-size: 25px 25px;
 }
 
-/*Top*/
-.top_main{
-    width: 100%;
-    height: auto;
-}
-.top_logo{
-    font-size: 30px;
-    color: #2c3e50;
-    padding: 10px;
-}
-.top_box{
-    margin: 0px 10px 10px 10px ;
-    width: 94%;
-    min-height: 100px;
-    height: auto;
-}
-/*Box include*/
-.top_box_container{
-    height: auto;
-    width: 100%;
-    min-height: 100px;
-    background: -webkit-linear-gradient(53deg, rgba(233,255,64,1) 0%, rgba(0,128,128,1) 100%);
-    opacity: .8;
-}
-
-
 /*Play_bar*/
 .hr_play_bar{
     margin: 0;
@@ -294,7 +263,7 @@ html, body{
     background-size: 25px 25px;
 }
 .progress_box{
-    transform: translate(0px,-48px)
+    transform: translate(0px,-47.5px)
 }
 .progress_line{
     width: 100%;
@@ -329,51 +298,54 @@ html, body{
 
 .like_page{
     position: absolute;
-    left: 100%;
-    top: 60px;
     display: flex;
+    left: 0;
+    top: 60px;
     width: 100%;
     height: auto;
     justify-content: center;
     background-color: blue;
     transition: 0.5s;
     z-index: 2;
+    transform: translateX(100%);
 }
 .like_page_active{
     transition: 0.5s;
-    left: 0%;
+    transform: translateX(0%);
 }
 
 .find_page{
     position: absolute;
-    left: 100%;
-    top: 60px;
     display: flex;
+    left: 0;
+    top: 60px;
     width: 100%;
     height: auto;
     justify-content: center;
     background-color: red;
     transition: 0.5s;
     z-index: 3;
+    transform: translateX(100%);
 }
 .find_page_active{
     transition: 0.5s;
-    left: 0%;
+    transform: translateX(0%);
 }
 
 .account_page{
     position: absolute;
-    left: 100%;
-    top: 60px;
     display: flex;
+    left: 0;
+    top: 60px;
     width: 100%;
     height: auto;
     justify-content: center;
     background-color: green;
     transition: 0.5s;
     z-index: 4;
+    transform: translateX(100%);
 }
 .account_page_active{
     transition: 0.5s;
-    left: 0%;
+    transform: translateX(0%);
 }

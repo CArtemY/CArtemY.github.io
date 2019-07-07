@@ -14,7 +14,7 @@
 </head>
 <body>
     
-<div class="main" id="main">
+
     
     
     
@@ -27,41 +27,35 @@
     </div>
         
     <div class="home_page" id="home_page">
-        <div class="top_main">
-            <div class="top_logo">Top</div>
-            <div class="top_box">
-                <div class="top_box_container"></div>
-                <div class="top_img_container"></div>
-                <div class="top_list_container"></div>
-            </div>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
-            Hello<hr>
+        <div class="content_home_page" id="content_home_page">
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
+                Hello<hr>
         </div>
     </div>
     <div class="like_page">
@@ -194,7 +188,7 @@
         
     </div> 
 
-</div>
+
 <script>
 $('.button_like').on('click',function(e){
       e.preventDefault;
@@ -243,6 +237,7 @@ $('.footer_ico_1').on('click', function(e){
     
         $('.home_page').toggleClass('home_page_active');
         home_page_count = 1;
+        window.scrollTo(0,0);
         
     } else{
         if (like_page_count == 0){
@@ -265,6 +260,8 @@ $('.footer_ico_1').on('click', function(e){
             $('.account_page').toggleClass('account_page_active');
             account_page_count = 0;
         }
+        
+        window.scrollTo(0,0);
     }
     
 
@@ -289,6 +286,7 @@ $('.footer_ico_2').on('click', function(e){
         
         $('.like_page').toggleClass('like_page_active');
         like_page_count = 1;
+        window.scrollTo(0,0);
         
         if (home_page_count == 0){
             home_page_count=0;
@@ -318,6 +316,8 @@ $('.footer_ico_2').on('click', function(e){
             $('.home_page').toggleClass('home_page_active');
         home_page_count = 0;
         }
+        
+        window.scrollTo(0,0);
     }
     
 });
@@ -329,38 +329,39 @@ $('.footer_ico_3').on('click', function(e){
             account_page_count = 0;
         } else {
              $('.account_page').toggleClass('account_page_active');
-        account_page_count = 0;
+            account_page_count = 0;
         }
         
         if (like_page_count == 1){
             like_page_count = 1;
         }else {
             $('.like_page').toggleClass('like_page_active');
-        like_page_count = 1;
+            like_page_count = 1;
         }
         
         if (home_page_count == 0){
             home_page_count=0;
         }else{
             $('.home_page').toggleClass('home_page_active');
-        home_page_count = 0;
+            home_page_count = 0;
         }
         
          $('.find_page').toggleClass('find_page_active');
         find_page_count = 1;
+        window.scrollTo(0,0);
         
         if (home_page_count == 0){
             home_page_count=0;
         }else{
             $('.home_page').toggleClass('home_page_active');
-        home_page_count = 0;
+            home_page_count = 0;
         }
         
         if (like_page_count == 0){
             like_page_count = 0;
         }else {
             $('.like_page').toggleClass('like_page_active');
-        like_page_count = 0;
+            like_page_count = 0;
         }
         
     }else{
@@ -368,29 +369,31 @@ $('.footer_ico_3').on('click', function(e){
             account_page_count = 0;
         } else {
              $('.account_page').toggleClass('account_page_active');
-        account_page_count = 0;
+            account_page_count = 0;
         }
         
         if (like_page_count == 1){
             like_page_count = 1;
         }else {
             $('.like_page').toggleClass('like_page_active');
-        like_page_count = 1;
+            like_page_count = 1;
         }
         
         if (home_page_count == 0){
             home_page_count=0;
         }else{
             $('.home_page').toggleClass('home_page_active');
-        home_page_count = 0;
+            home_page_count = 0;
         }
         
         if (like_page_count == 0){
             like_page_count = 0;
         }else {
             $('.like_page').toggleClass('like_page_active');
-        like_page_count = 0;
+            like_page_count = 0;
         }
+        
+        window.scrollTo(0,0);
         
     } 
 
@@ -414,20 +417,21 @@ $('.footer_ico_4').on('click', function(e){
         }
         
         $('.account_page').toggleClass('account_page_active');
-            account_page_count = 1;
+        account_page_count = 1;
+        window.scrollTo(0,0);
         
         if (home_page_count == 0){
             home_page_count=0;
         }else{
             $('.home_page').toggleClass('home_page_active');
-        home_page_count = 0;
+            home_page_count = 0;
         }
         
         if (like_page_count == 0){
             like_page_count = 0;
         }else {
             $('.like_page').toggleClass('like_page_active');
-        like_page_count = 0;
+            like_page_count = 0;
         }
         
         if (find_page_count == 0){
@@ -472,6 +476,8 @@ $('.footer_ico_4').on('click', function(e){
             $('.find_page').toggleClass('find_page_active');
             find_page_count = 0;
         }
+        
+        window.scrollTo(0,0);
         
     }
 });
