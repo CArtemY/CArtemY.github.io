@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1", user-scalable=0>    
+    <meta name="theme-color" content="#f1c40f">
+    
+    <link rel="stylesheet" href="sing-in.css">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<div class="main" id="main">
+    
+
+    
+    <div class="header" id="header">
+        <div class="header_1">
+            <div class="header_ico" id="header_ico"></div>
+            <div class="header_logo" id="header_logo">MusicCloud</div>
+        </div>
+        <hr class="hr_header">
+    </div>
+        
+    <div class="sing-in_page" id="sing-in_page">
+        <div class="content_sing-in_page" id="content_sing-in_page">
+            1<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            SING-IN PAGE<hr>
+            2<hr>
+        </div>
+
+    </div>
+    
+    <div class="footer" id="footer">
+        <hr class="hr_header">
+        <hr class="line_1">
+        <hr class="line_2">
+        <hr class="line_3">
+        
+            <li><a href="../home/home.html">
+                <div class="footer_ico_1" id="footer_ico_1"></div>    
+            </a></li>
+
+
+            <li><a href="../likes/likes.html">
+                <div class="footer_ico_2" id="footer_ico_2"></div>    
+            </a></li>
+
+            <li><a href="../found/found.html">
+                <div class="footer_ico_3" id="footer_ico_3"></div>    
+            </a></li>
+
+            <li><a href="../sing-in/sing-in.html">
+                <div class="footer_ico_4" id="footer_ico_4"></div>    
+            </a></li>
+        
+        <!--<hr class="hr_play_bar">>-->
+        <div class="progress_box">
+            <div class="progress_line"></div>
+            <div class="progress_line_up"></div>
+        </div>
+        <div class="play_bar">
+            <div class="play_bar_container">
+                <div class="button_left"></div>
+                <div class="button_pause"></div>
+                <div class="button_right"></div>
+                <!--<div class="button_random"></div>-->
+                <!--<div class="button_repeat"></div>-->
+                <div class="song_info">
+                    <div class="song_name">Name</div>
+                    <div class="song_artist">Artist</div>
+                </div>
+                <!--<div class="button_playlist"></div>-->
+                <div class="button_like" id="button_like">
+                    <div class="button_like_off" id="button_like_off"></div>
+                    <div class="button_like_on" id="button_like_on"></div> 
+                </div>
+                <div class="button_volume"></div>
+            </div>
+        </div>
+        
+    </div> 
+
+</div>
+
+<script>
+window.scrollTo(0,0);
+$('.button_like').on('click',function(e){
+      e.preventDefault;
+      if (document.getElementById('button_like_on').style.display=="flex"){
+          document.getElementById('button_like_on').style.display="none";
+      }else{
+          document.getElementById('button_like_on').style.display="flex";
+      }
+});
+    
+var home_page_count = 0; 
+var like_page_count = 0;    
+var find_page_count = 0; s
+var account_page_count = 0; 
+    
+$('.footer_ico_1').on('click', function(e){
+    e.preventDefault;   
+
+});
+    
+$('.footer_ico_2').on('click', function(e){
+    e.preventDefault;
+    
+});
+    
+$('.footer_ico_3').on('click', function(e){
+    e.preventDefault;
+
+});
+    
+$('.footer_ico_4').on('click', function(e){
+    e.preventDefault;
+    
+});
+    
+//alert("Hello");
+</script>
+</body>
+</html>

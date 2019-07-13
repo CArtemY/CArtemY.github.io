@@ -4,3 +4,6 @@ pause round		- https://www.flaticon.com/free-icon/rounded-pause-button_61039#ter
 next 			- https://www.flaticon.com/free-icon/fast-forward_149660
 nota 			- https://www.flaticon.com/free-icon/music-player_149646
 next			- https://www.flaticon.com/free-icon/play-symbol_26061
+
+#2c3e50 - for not active
+#dfe4ea - for active
