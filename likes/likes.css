@@ -173,13 +173,23 @@ li{
     text-align: center;
 }
 .play_bar{
-    transform: translate(0%, -51px);
+    transform: translate(0%, -46.5px);
     width: 100%;
     height: 45px;
     background-color: #f1f2f6 ;
-    position: absolute;
-    
+    position: fixed;
+    display: none;
+    transition: 0.5s;
 }
+.play_bar_active{
+    transition: 0.5s;
+    display: block;
+}
+.main_play-bar_active{
+    transition: 0.5s;
+    padding-bottom: 80px;
+}
+
 .play_bar_container{
     height: 100%;
     width: 98%;
@@ -261,9 +271,7 @@ li{
     background: url('../img/Navigation/volume-up-indicator.png') center center no-repeat;
     background-size: 25px 25px;
 }
-.progress_box{
-    transform: translate(0px,-49px)
-}
+
 .progress_line{
     width: 100%;
     height: 2px;
@@ -296,11 +304,12 @@ li{
 }
 
 .main{
+    transition: 0.5s;
     position: relative;
     width: 100%;
     height: auto;   
     padding-top: 62px;
-    padding-bottom: 80px;
+    padding-bottom: 33px;
 }
 
 .sing-in_page{

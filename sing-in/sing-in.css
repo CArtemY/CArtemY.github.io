@@ -2,7 +2,7 @@ html, body{
     padding: 0 ;
     margin: 0 ;
     color: white;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .header{
@@ -160,12 +160,21 @@ li{
     text-align: center;
 }
 .play_bar{
-    transform: translate(0%, -51px);
+    transform: translate(0%, -46.5px);
     width: 100%;
     height: 45px;
     background-color: #f1f2f6 ;
-    position: absolute;
-    
+    position: fixed;
+    display: block;
+    transition: 0.5s;
+}
+.play_bar_active{
+    transition: 0.5s;
+    display: block;
+}
+.main_play-bar_active{
+    transition: 0.5s;
+    padding-bottom: 80px;
 }
 .play_bar_container{
     height: 100%;
@@ -241,15 +250,11 @@ li{
     background-size: 25px 25px;
     z-index: 2;
 }
-
 .button_volume{
     height: 100%;
     width: 45px;
     background: url('../img/Navigation/volume-up-indicator.png') center center no-repeat;
     background-size: 25px 25px;
-}
-.progress_box{
-    transform: translate(0px,-49px)
 }
 .progress_line{
     width: 100%;
@@ -263,6 +268,7 @@ li{
     background-color: #f1c40f;
 }
 
+/* SONG INFO*/
 .song_info{
     display: flex;
     flex-direction:column;
@@ -282,20 +288,257 @@ li{
     float: left;
 }
 
+/* CONTENT*/
 .main{
+    transition: 0.5s;
     position: relative;
     width: 100%;
     height: auto;   
     padding-top: 62px;
-    padding-bottom: 80px;
+    padding-bottom: 33px;
 }
-
 .sing-in_page{
     width: 100%;
     height: auto;
-    background-color: blue;
+}
+.content_sing-in_page{
+    height: 85vh;
+}
+.main_box{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%);
+    height: auto;
+    min-height: 100px;
+    width:75%;
+    background-color: ;
+    margin: 0;
+    padding: 0;
+    z-index: 40;
 }
 
-.content_sing-in_page{
-    
+/* CHOOSE MOVIE BOX*/
+.choose_box{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 20px;
 }
+.btn_sing-in{
+    height: 100%;
+    width: 50%;
+}
+.btn_reg{
+    height: 100%;
+    width: 50%;
+}
+.text_sing-in{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    transform: translate(0%,-50%);
+    color: #2c3e50;
+}
+.text_reg{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    transform: translate(0%,-50%);
+    color: #2c3e50;
+}
+
+/* CHOSE MOVIE UNDERLINE*/
+.hr_active_form{
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    height: 2px;
+    border:0px;
+    border-radius: 10px;
+    color:#f1c40f;
+    background-color: #f1c40f;
+    transition: 0.5s;
+    transform: translate(0%,50px);
+}
+.hr_active_form_reg_active{
+    transition: 0.5s;
+    transform: translate(100%,50px);
+}
+
+.boxes{
+
+}
+
+/* SING-IM BOX*/
+.sing-in_box{
+    transition: 0.5s;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    z-index: 21;
+}
+.sing-in_box_not_active{
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+.sing-in_forms_box{
+    padding : -30px 0 30px 0;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background-color:;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-align: center;
+}
+input[name="sing-in_email"], input[name="sing-in_password"]{
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border:0;
+    color: #2c3e50;
+    padding-left: 3px;
+}
+input[name="sing-in"]{
+    background-color: white;
+    height: 45px;
+    width: 200px;
+    color: #2c3e50;
+    border: 1px solid #f1c40f;
+    border-radius: 40px;
+    font-size: 20px;
+}
+input[name="sing-in"]:hover{
+    background-color: #f1c40f;
+    height: 45px;
+    width: 200px;
+    color: white;
+    border: 1px solid #f1c40f;
+    border-radius: 40px;
+    font-size: 20px;
+}
+input[name="sing-in_email"]:focus,
+input[name="sing-in_password"]:focus{
+    transition: 0.5s;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    outline:none;
+}
+.sing-in_email_underline,
+.sing-in_password_underline{
+    height: 2px;
+    border: 0;
+    background-color:  #ced6e0;
+    position: relative;
+    top: -33px;
+    border:0px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* REG BOX*/
+.reg_box{
+    position: fixed;
+    transition: 0.5s;
+    position: relative;
+    top: 52px;
+    transform: translate(100%,-80%);
+    background-color: ;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    z-index: 20;
+    opacity: 0;
+}
+.reg_box_active{
+    transition: 0.5s;
+    opacity: 1;
+    transform: translate(0%, -80%);
+}
+.reg_forms_box{
+    padding : -30px 0 30px 0;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    background-color:;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-align: center;
+}
+input[name="reg_email"], input[name="reg_password_1"], input[name="reg_password_2"]{
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border:0;
+    color: #2c3e50;
+    padding-left: 3px;
+}
+input[name="reg"]{
+    background-color: white;
+    height: 45px;
+    width: 200px;
+    color: #2c3e50;
+    border: 1px solid #f1c40f;
+    border-radius: 40px;
+    font-size: 20px;
+}
+input[name="reg"]:hover{
+    background-color: #f1c40f;
+    height: 45px;
+    width: 200px;
+    color: white;
+    border: 1px solid #f1c40f;
+    border-radius: 40px;
+    font-size: 20px;
+}
+input[name="reg_email"]:focus,
+input[name="reg_password_1"]:focus, input[name="reg_password_2"]{
+    transition: 0.5s;
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+    margin-bottom: 25px;
+    outline:none;
+}
+.reg_email_underline,
+.reg_password_1_underline{
+    height: 2px;
+    border: 0;
+    background-color:  #ced6e0;
+    position: relative;
+    top: -33px;
+    border:0px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.reg_password_2_underline{
+    height: 2px;
+    border: 0;
+    background-color:  #ced6e0;
+    position: relative;
+    top: -33px;
+    border:0px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+
+
