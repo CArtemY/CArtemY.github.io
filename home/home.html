@@ -7,6 +7,8 @@
     <meta name="theme-color" content="#f1c40f">
     
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../header/header.css">
+    
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Libre+Baskerville&display=swap" rel="stylesheet">
@@ -15,8 +17,6 @@
 <body>
     
 <div class="main" id="main">
-    
-
     
     <div class="header" id="header">
         <div class="header_1">
@@ -80,12 +80,14 @@
 
     </div>
     
+    
+    
     <div class="footer" id="footer">
         <hr class="hr_header">
         <hr class="line_1">
         <hr class="line_2">
         <hr class="line_3">
-            
+        
             <li><a href="../home/home.html">
                 <div class="footer_ico_1" id="footer_ico_1"></div>    
             </a></li>
@@ -103,13 +105,11 @@
                 <div class="footer_ico_4" id="footer_ico_4"></div>    
             </a></li>
         
-            
-        <!--<hr class="hr_play_bar">>-->
-        <div class="progress_box">
-            <div class="progress_line"></div>
-            <div class="progress_line_up"></div>
-        </div>
         <div class="play_bar">
+            <div class="progress_box">
+                <div class="progress_line"></div>
+                <div class="progress_line_up"></div>
+            </div>
             <div class="play_bar_container">
                 <div class="button_left"></div>
                 <div class="button_pause"></div>
@@ -149,9 +149,14 @@ var like_page_count = 0;
 var find_page_count = 0; s
 var account_page_count = 0; 
     
-$('.footer_ico_1').on('click', function(e){
+$('.header_ico').on('click', function(e){
     e.preventDefault;   
 
+});
+    
+$('.footer_ico_1').on('click', function(e){
+    e.preventDefault;   
+    
 });
     
 $('.footer_ico_2').on('click', function(e){
